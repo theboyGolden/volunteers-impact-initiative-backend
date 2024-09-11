@@ -26,6 +26,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.post('/', (req, res)=>{
+  console.log('Backend running')
+})
+
 // Route to handle contact form submissions
 app.post('/contact', (req, res) => {
   const { name, email, message } = req.body;
