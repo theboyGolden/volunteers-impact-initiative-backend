@@ -27,10 +27,10 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post('/', (req, res)=>{
+app.get('/', (req, res)=>{
   console.log('Backend running');
   res.send('Backend running successfully');
-})
+});
 
 // Route to handle contact form submissions
 app.post('/contact', (req, res) => {
