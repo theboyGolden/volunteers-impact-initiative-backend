@@ -9,7 +9,7 @@ const port = process.env.PORT || 3001;
 
 // Enable CORS
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from this origin
+  origin: 'https://volunteers-impact-initiative-frontend-deployed-q73fppdo8.vercel.app', // Allow requests from this origin
 }));
 
 app.use(bodyParser.json());
