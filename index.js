@@ -10,6 +10,7 @@ const port = process.env.PORT || 3001;
 // Enable CORS
 app.use(cors({
   origin: 'volunteers-impact-initiative-frontend-deployed.vercel.app', // Allow requests from this origin
+  methods: ['GET', 'POST'],
 }));
 
 app.use(bodyParser.json());
